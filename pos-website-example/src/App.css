@@ -1,0 +1,726 @@
+/* 
+##################################################
+
+                Header styling
+
+##################################################
+
+*/
+
+header {
+  background-color: "#ffffd7";
+}
+.header-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffd7;
+}
+
+/* 
+##################################################
+
+              Contact form styling
+
+##################################################
+
+*/
+.contact-form-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 6px rgba(211, 211, 211, 0.6);
+}
+.contact-form-container .heading {
+  font-size: 34px;
+  margin: 20px 0px;
+  color: grey;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  font-family: Jost;
+}
+.contact-form-container .contact-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.contact-form-container .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 200px;
+}
+.contact-form-container .contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+.contact-form-container .contact-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+.contact-form-container .contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  resize: vertical;
+}
+.contact-form-container .contact-form .contact-form-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-form-container .contact-form .contact-form-btn:hover {
+  background-color: #b8cbbc;
+}
+.contact-form-container .contact-form .contact-form-btn-container {
+  flex: 1 1 100%;
+}
+
+/* 
+##################################################
+
+                  footer styling
+
+##################################################
+
+*/
+
+.footer-area {
+  background-color: #212122;
+}
+.footer-title {
+  color: white;
+}
+
+/* 
+##################################################
+
+              Product list styling
+
+##################################################
+
+*/
+
+.product-wrap {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-wrap:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  display: none;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 15px;
+}
+
+.product-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product-rating .fa {
+  margin-right: 2px;
+}
+
+.pink {
+  color: #ff5e6c;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* 
+##################################################
+
+            Product detail card styling
+
+##################################################
+
+*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail-card {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-card img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.product-details-price .price {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.pro-details-rating {
+  margin-bottom: 10px;
+}
+
+.pro-details-list ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.pro-details-quality .btn {
+  font-size: 1rem;
+}
+
+/* 
+##################################################
+
+                  Loader styling
+
+##################################################
+
+*/
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.loader {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* 
+##################################################
+
+                Order form styling
+
+##################################################
+
+*/
+
+.order-form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(211, 211, 211, 0.6);
+  border-radius: 10px;
+  background: #fff;
+}
+.order-form .order-form-heading {
+  margin-bottom: 20px;
+  font-size: 34px;
+  margin: 20px 0px;
+  color: grey;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  font-family: Jost;
+}
+.order-form-container .order-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 200px;
+}
+
+.order-form .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+.order-form .form-group input,
+.order-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+.order-form .form-group select option {
+  color: black;
+}
+.order-form-container .order-form .order-form-btn-container {
+  flex: 1 1 100%;
+}
+
+.order-form-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.order-form-btn:hover {
+  background-color: #b8cbbc;
+}
+
+/* 
+##################################################
+
+            Toast notification styling
+
+##################################################
+
+*/
+
+.toastify-toast {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  max-width: 300px;
+  width: auto;
+}
+
+.toastify-toast-success {
+  background-color: #030;
+  color: gainsboro;
+}
+
+.toastify-toast-error {
+  background-color: #820c16;
+  color: #fff;
+}
+
+.Toastify__toast-container {
+  width: auto;
+}
+
+/* 
+##################################################
+
+              Confirm alert styling
+
+##################################################
+
+*/
+
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.react-confirm-alert {
+  font-family: "Arial", sans-serif;
+}
+
+.react-confirm-alert .react-confirm-alert-body {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #e3e3eb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.react-confirm-alert .react-confirm-alert-body h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.react-confirm-alert .react-confirm-alert-body p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+}
+.react-confirm-alert .react-confirm-alert-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-confirm-alert .react-confirm-alert-button-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.react-confirm-alert .react-confirm-alert-button-group button:hover {
+  background-color: #0056b3;
+}
+
+.react-confirm-alert .react-confirm-alert-button-group button:first-child {
+  background-color: #d2122e;
+}
+
+.react-confirm-alert
+  .react-confirm-alert-button-group
+  button:first-child:hover {
+  background-color: #a50d22;
+}
+
+/* 
+##################################################
+
+              Swipe Button - Add product 
+
+##################################################
+
+*/
+.swipe-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-button {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.swipe-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.swipe-button:hover::after {
+  transform: translateX(0);
+}
+
+.swipe-button:hover {
+  color: red;
+  border-color: red;
+}
+
+/* 
+##################################################
+
+        Add product and update product forms
+
+##################################################
+
+*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-content form label {
+  margin-bottom: 10px;
+  width: 45%;
+  min-width: 250px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content form button {
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 45%;
+  height: 45px;
+}
+
+.modal-content form button:hover {
+  background-color: rgb(50, 199, 199);
+}
+
+/* 
+##################################################
+
+       classes for rating stars
+
+##################################################
+
+*/
+
+.checked {
+  color: orange; /* Color for filled stars */
+}
+
+.unchecked {
+  color: grey; /* Color for empty stars */
+}
+
+/* 
+##################################################
+
+              Media queries styling
+
+##################################################
+
+*/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 840px) {
+  .contact-form-container {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-content form {
+    flex-direction: column;
+  }
+
+  .modal-content form label,
+  .modal-content form input,
+  .modal-content form textarea,
+  .modal-content form button {
+    width: 100%;
+  }
+  .contact-form-container {
+    padding: 1rem;
+  }
+
+  .back-icon {
+    left: 3rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem;
+  }
+  .order-form-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .order-btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-detail-card {
+    padding: 15px;
+  }
+
+  .product-detail-card img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+  .back-icon {
+    display: none;
+  }
+  .contact-form-container {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 455px) {
+  .cart-item {
+    flex-direction: column;
+  }
+  .cart-item img {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .cart-item h5 {
+    text-align: center;
+    line-height: 20px;
+  }
+  .inc-dec-btn {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .price-qnt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkout-item {
+    flex-direction: column;
+  }
+  .checkout-item img {
+    margin-bottom: 10px;
+  }
+  .checkout-item h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .svg-heading {
+    justify-content: center;
+  }
+}
