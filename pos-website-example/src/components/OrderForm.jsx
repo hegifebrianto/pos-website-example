@@ -1,10 +1,11 @@
-import React from "react";
 import toast from "react-hot-toast";
 import { useHistory } from "react-router-dom";
+import useCart from "../store/useCart";
 
 const OrderForm = () => {
   const history = useHistory();
 
+  const { clearCart}  = useCart();
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success(`Your order has been sent!`, {
@@ -19,6 +20,8 @@ const OrderForm = () => {
       },
       duration: "200",
     });
+    console.log('masuk sini after submit')
+    clearCart();
     history.push("/");
   };
 

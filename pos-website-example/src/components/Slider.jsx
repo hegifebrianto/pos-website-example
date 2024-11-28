@@ -30,7 +30,7 @@ const SliderComponent = () => {
       <div className="slider-active owl-carousel nav-style-1 owl-dot-none">
         <div className="single-slider slider-height-1 bg-purple">
           <div className="container">
-            <div className="row">
+            <div className="row" style={{marginTop:250}}>
               <div className="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
                 <div className="slider-content slider-animated-1">
                   <h3 className="animated">Smart Products</h3>
@@ -54,8 +54,9 @@ const SliderComponent = () => {
                 <div className="slider-single-img slider-animated-1">
                   <img
                     className="animated"
-                    src="assets/img/slider/single-slide-1.webp"
+                    src="./src/assets/img/slider/slider-tokped02.webp"
                     alt=""
+                    style={{marginTop:150}}
                   />
                 </div>
               </div>
@@ -88,8 +89,9 @@ const SliderComponent = () => {
                 <div className="slider-single-img slider-animated-1">
                   <img
                     className="animated"
-                    src="assets/img/slider/single-slide-hm1-2.webp"
+                    src="./src/assets/img/slider/slider-tokped01.webp"
                     alt=""
+                    style={{marginTop:150}}
                   />
                 </div>
               </div>

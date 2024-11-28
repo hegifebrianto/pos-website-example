@@ -9,7 +9,7 @@ const SupportArea = () => {
               <div className="support-icon">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/support-1.webp"
+                  src="./src/assets/img/icon-img/support-1.webp"
                   alt=""
                 />
               </div>
@@ -24,7 +24,7 @@ const SupportArea = () => {
               <div className="support-icon">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/support-2.webp"
+                  src="./src/assets/img/icon-img/support-2.webp"
                   alt=""
                 />
               </div>
@@ -39,7 +39,7 @@ const SupportArea = () => {
               <div className="support-icon">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/support-3.webp"
+                  src="./src/assets/img/icon-img/support-3.webp"
                   alt=""
                 />
               </div>
@@ -54,7 +54,7 @@ const SupportArea = () => {
               <div className="support-icon">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/support-4.webp"
+                  src="./src/assets/img/icon-img/support-4.webp"
                   alt=""
                 />
               </div>

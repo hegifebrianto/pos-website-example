@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import useCart from "../store/useCart";
 import { confirmAlert } from "react-confirm-alert"; // Import the library
 import { useHistory } from "react-router-dom";
@@ -14,7 +14,7 @@ const Cart = () => {
 		increaseQuantity,
 		decreaseQuantity,
 	} = useCart();
-	console.log(cart);
+	console.log('masuk sini :',cart);
 
 	const totalPrice = useMemo(() => {
 		return cart.reduce(
@@ -24,6 +24,7 @@ const Cart = () => {
 	}, [cart]);
 
 	const handleMoveToProceed = () => {
+		console.log('handleMoveToProceed :',cart);
 		history.push("/checkoutPage", { cartItems: cart });
 	};
 
@@ -127,9 +128,9 @@ const Cart = () => {
 											marginBottom: "10px",
 										}}
 									>
-										<p>
+										<span>
 											${item.price} x {item.quantity || 1}
-										</p>
+										</span>
 
 										{/* quantity is undefined here */}
 										{console.log(item.quantity)}

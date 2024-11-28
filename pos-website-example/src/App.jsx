@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './components/Header';
 import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/HomePage";
-
+import CartPage from "./pages/CartPage";
+import CheckOutPage from './pages/CheckOutPage'
 
 
 
@@ -21,6 +22,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route path="/cartPage">
+            <CartPage />
+          </Route>
+          <Route path="/checkoutPage">
+            <CheckOutPage />
           </Route>
        
         </Switch>

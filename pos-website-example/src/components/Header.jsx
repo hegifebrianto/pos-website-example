@@ -19,7 +19,10 @@ const Header = () => {
 							<Link to="/">
 								<img
 									alt=""
-									src="./src/assets/img/logo/logo.webp"
+									src="./src/assets/img/logo/logo-terbit.webp"
+									width={100}
+									height={50}
+									style={{marginTop:-20}}
 								/>
 							</Link>
 						</div>

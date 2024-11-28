@@ -423,6 +423,7 @@
         } else {
             // Don't allow decrementing below zero
             if (oldValue > 0) {
+                // eslint-disable-next-line no-redeclare
                 var newVal = parseFloat(oldValue) - 1;
             } else {
                 newVal = 1;
@@ -457,10 +458,12 @@
     /*-----------------------------------
         Scroll zoom
     -------------------------------------- */
+    // eslint-disable-next-line no-undef
     window.sr = ScrollReveal({
         duration: 800,
         reset: false
     });
+    // eslint-disable-next-line no-undef
     sr.reveal('.scroll-zoom');
     
     
@@ -578,6 +581,7 @@
     
     
     /*--- Clickable menu active ----*/
+    // eslint-disable-next-line no-unused-vars
     const slinky = $('#menu').slinky()
     
     /*====== sidebarCart ======*/
@@ -814,6 +818,7 @@
     
     
     /*------ Wow Active ----*/
+    // eslint-disable-next-line no-undef
     new WOW().init();
     
     
@@ -829,4 +834,5 @@
 }, 2000);
 
 
+// eslint-disable-next-line no-undef
 })(jQuery);

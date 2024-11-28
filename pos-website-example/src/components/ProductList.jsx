@@ -128,7 +128,7 @@ const ProductList = () => {
 							className="col-xl-3 col-md-6 col-lg-4 col-sm-6"
 							key={product.id}
 						>
-							{console.log(product)}
+							{/* {console.log(product)} */}
 							<div
 								className="product-wrap mb-25"
 								style={{
@@ -155,7 +155,7 @@ const ProductList = () => {
 								>
 									<div
 										onClick={() => setEditingProduct(product)}
-										style={{ fontSize: "25px", color: "green" }}
+										style={{ fontSize: "25px", color: "green",cursor:"pointer" }}
 									>
 										<i className="fa fa-edit"></i>
 									</div>
@@ -195,7 +195,7 @@ const ProductList = () => {
 										/>
 									</Link>
 
-									<span className="pink">${product.price}</span>
+									<span className="pink" style={{cursor:"pointer"}}>${product.price}</span>
 									<div className="product-action">
 										<div className="pro-same-action pro-wishlist">
 											<a

@@ -2060,9 +2060,9 @@ a.default-btn {
 }
 
 /*----- 2. Header style ----*/
-.header-area {
+/* .header-area {
   position: relative;
-}
+} */
 
 .sticky-bar.stick {
   -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;

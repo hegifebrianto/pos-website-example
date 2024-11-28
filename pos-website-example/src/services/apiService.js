@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://fakestoreapi.com", // Replace with your actual base URL
+  baseURL: "https://fakestoreapi.in/api", // Replace with your actual base URL
 });
 
 // Fetch all products
 export const fetchProducts = async () => {
   const response = await api.get("/products");
-  return response.data;
+  return response.data.products;
 };
 
 // Fetch a product by ID
